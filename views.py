@@ -2,7 +2,7 @@ from flask import Blueprint, request, redirect, render_template, url_for
 from flask.views import MethodView
 
 from flask.ext.mongoengine.wtf import model_form
-from market_server.models import Post, BlogPost
+from tumblelog.models import Post, BlogPost
 
 posts = Blueprint('posts', __name__, template_folder='templates')
 
