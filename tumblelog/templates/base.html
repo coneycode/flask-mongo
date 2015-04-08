@@ -5,23 +5,18 @@
     <title>My Tumblelog</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
     <style>.content {padding-top: 80px;} a.brand {color: #fff }</style>
+    <style type="text/css">
+      .form-control::-webkit-input-placeholder { color:  #8fe0fe; }
+      .form-control:-moz-placeholder { color:  #8fe0fe; }
+      .form-control::-moz-placeholder { color:  #8fe0fe; }
+      .form-control:-ms-input-placeholder { color:  #8fe0fe; }
+      body {font-family: Helvetica}
+  </style>
   </head>
 
   <body>
 
-    {%- block topbar -%}
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <h2>
-              <a href="/" class="brand">My Tumblelog</a> <small>Starring Flask, MongoDB and MongoEngine</small>
-          </h2>
-        </div>
-        <div class="navbar-collapse">
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-    {%- endblock -%}
+   
 
     <div class="container">
       <div class="content">

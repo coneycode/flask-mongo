@@ -3,16 +3,20 @@
 {% block content %}
   <table  class="table table-bordered table-striped">
     <thead>
-      <th>Title</th>
-      <th>Created</th>
-      <th>Actions</th>
+      <th>姓名</th>
+      <th>学校</th>
+      <th>电话</th>
+      <th>关于你</th>
+      <th>创建时间</th>
     </thead>
     <tbody>
     {% for post in posts %}
       <tr>
-        <th><a href="{{ url_for('admin.edit', slug=post.slug) }}">{{ post.title }}</a></th>
+        <th><p>{{ post.slug }}</p></th>
+        <td><p>{{ post.school }}</p></td>
+        <td><p>{{ post.phone }}</p></td>
+        <td><p>{{ post.about_you }}</p></td>
         <td>{{ post.created_at.strftime('%Y-%m-%d') }}</td>
-        <td><a href="{{ url_for("admin.edit", slug=post.slug) }}" class="btn primary">Edit</a></td>
       </tr>
     {% endfor %}
     </tbody>
