@@ -3,8 +3,8 @@ from flask.views import MethodView
 
 from flask.ext.mongoengine.wtf import model_form
 
-from ChogicMarket.auth import requires_auth
-from ChogicMarket.models import Post, BlogPost
+from market_server.auth import requires_auth
+from market_server.models import Post, BlogPost
 
 admin = Blueprint('admin', __name__, template_folder='templates')
 
