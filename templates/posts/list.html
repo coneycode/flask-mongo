@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for post in posts %}
+      <h2>
+      <p>姓名:{{ post.slug }}</p>
+      </h2>
+      <p>学校:{{ post.school }}</p>
+      <p>手机号:{{ post.phone }}</p>
+      {% if post.about_you %}
+          <p>自我简介：{{ post.about_you|truncate(100) }}</p>
+      {% endif %}
+    {% endfor %}
+{% endblock %}
